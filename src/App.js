@@ -1,12 +1,15 @@
 
 import {BrowserRouter,Routes,Route } from "react-router-dom";
-import HomePage from "./HomePage";
+import Admin from "./Admin";
+// import GamesForm from"./GamesForm.jsx"
 
 function App() {
   return (
    <BrowserRouter>
     < Routes>
-      <Route path="/" element = {<HomePage/>}> </Route>
+      <Route path="/" element = {<Admin/>} />
+      {/* <Route path="/Admin/Add" element = {<GamesForm/>} /> */}
+      
     </Routes >
    </BrowserRouter>
   );

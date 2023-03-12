@@ -1,5 +1,14 @@
 import React from "react";
 import {Link} from "react-router-dom";
+// import GameStructure from "./GameStructure";
+
+
+// console.log("TRHIS IS IA TEST")
+// console.log(GameStructure)
+
+
+
+
 let campos = ["ID","Name","Game-genre","Price"]
 let data = [
 {
@@ -48,7 +57,7 @@ data.push({
 
 
 //  mandar los elementos
-function HomePage(){
+function Admin(){
 
     // console.log("filas",data)
     // console.log("campos",campos)
@@ -60,7 +69,7 @@ function HomePage(){
         <table className="table table-striped">
             <thead>
             <tr>
-                <td><Link className="btn btn-success">Nuevo</Link></td>
+                <td><Link to= "/"className="btn btn-success">Nuevo</Link></td>
               {campos.map((value,index)=> {
                 return <th key={index}>{value}</th>
               })}
@@ -83,7 +92,7 @@ function HomePage(){
                        if (index2 < 4) {
 
                            return <td key={index2}> {value2}</td>
-                       }
+                       } 
                         })}
 
 
@@ -98,4 +107,4 @@ function HomePage(){
         </div>
     )
 }
-export default HomePage
+export default Admin;
